@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả điện thoại</title>
+    <script src="js/Mobile.js"></script>
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+<div class="mobile">
+    <p id="iphone-name">Mobile</p>
+    <textarea id="iphone-inbox" placeholder="Inbox" cols="30" rows="10"></textarea>
+    <textarea id="iphone-outbox" placeholder="Outbox" cols="30" rows="10"></textarea>
+    <input type="text" oninput="writeMess(mobile1,this.value)" id="iphone-msg" placeholder="write message here...">
+    <button onclick="sendMess(mobile1,mobile2)">Send</button>
+</div>
+
+<div class="mobile">
+    <p id="nokia-name">Mobile</p>
+    <textarea id="nokia-inbox" placeholder="Inbox" cols="30" rows="10"></textarea>
+    <textarea id="nokia-outbox" placeholder="Outbox" cols="30" rows="10"></textarea>
+    <input type="text" oninput="writeMess(mobile2,this.value)" id="nokia-msg" placeholder="write message here...">
+    <button onclick="sendMess(mobile2,mobile1)">Send</button>
+</div>
+
+</body>
+</html>
